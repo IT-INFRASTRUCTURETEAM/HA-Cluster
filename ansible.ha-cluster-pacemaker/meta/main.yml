@@ -18,4 +18,4 @@ galaxy_info:
   - clustering
   - pacemaker
 dependencies:
-  - { role: OndrejHome.pcs-modules-2 }
+  - { role: ansible.pcs-modules-2-master }
