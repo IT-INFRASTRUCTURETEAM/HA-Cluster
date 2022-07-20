@@ -72,7 +72,7 @@
   when: cluster_firewall|bool and ansible_distribution == 'Fedora'
 
 - name: Authorize cluster nodes
-  shell: pcs cluster auth ansible-vm1 ansible-vm2 -u hacluster -p {{ cluster_user_pass }} --force
+  shell: pcs cluster auth 10.50.16.161 10.50.16.163 -u hacluster -p {{ cluster_user_pass }} --force
 
 
 #  pcs_auth:

@@ -1,3 +1,4 @@
-- hosts: servers
+- hosts: all
+  remote_user: rooot
   roles:
      - { role: 'ansible.ha-cluster-pacemaker' }
